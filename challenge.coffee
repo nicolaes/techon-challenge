@@ -55,4 +55,8 @@ class Challenge
 
     return minDistance <= @stats.tower_range
 
+  getTowerByXY: (x, y) ->
+    if @allPossibleTowersByXY.length == 0 then @getAllPossibleTowers()
+    return @allPossibleTowersByXY[x]?[y]
+
 module.exports = Challenge

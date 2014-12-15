@@ -1,0 +1,13 @@
+# Test
+runActions =
+  builds: [
+    {tower: challenge.getTowerByXY(2, 2), colors: [9, 0]}
+    {tower: challenge.getTowerByXY(3, 2), colors: [7, 13]}
+  ]
+  shots: [
+    {tower: 0, bug: 'B1', count: 4}
+    {tower: 0, bug: 'B2', count: 2}
+    {tower: 1, bug: 'B1', count: 3}
+    {tower: 1, bug: 'B2', count: 2}
+    {tower: 1, bug: 'B3', count: 5}
+  ]
